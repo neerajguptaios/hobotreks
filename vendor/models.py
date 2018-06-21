@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 class VendorDetail(models.Model):
     name = models.CharField(max_length=20)
