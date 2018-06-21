@@ -20,6 +20,6 @@ from vendor import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api/', include('hobotreksvendor.vendor.urls', namespace = 'vendor-api') ),
+    path('api/', include(('vendor.urls', 'vendor'), namespace='vendor-api')),
 
 ]
